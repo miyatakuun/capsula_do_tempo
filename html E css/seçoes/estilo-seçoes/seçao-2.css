@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(254, 207, 51, 1); /* fundo amarelo ouro */
+    color: rgb(32, 31, 28); /* cor da fonte */
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(255, 255, 255, 1); /* branco */
+    color: rgb(32, 31, 28);
+    padding: 20px;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav li a {
+    color: rgb(32, 31, 28);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav img {
+    height: 60px;
+    width: auto;
+}
+
+/* Texto do cabeçalho */
+header h1 {
+    margin-top: 10px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    margin-bottom: 10px;
+    color: rgb(32, 31, 28);
+}
+
+article p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(32, 31, 28);
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: rgb(32, 31, 28);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: rgba(254, 207, 51, 1); /* cor de destaque no hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media(max-width:768px){
+    header nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}

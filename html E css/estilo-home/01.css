@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(254, 207, 51, 1); /* fundo amarelo ouro */
+    color: rgb(32, 31, 28); /* cor da fonte */
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1); /* branco */
+    color: rgb(32, 31, 28);
+    padding: 20px;
+}
+
+.div-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.div-header img {
+    width: 300px;
+    height: auto;
+}
+
+header h1, header h2 {
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header h2 {
+    font-size: 2rem;
+}
+
+/* Conteúdo principal */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1320px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+main a:hover {
+    transform: scale(1.05);
+}
+
+main a img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(32, 31, 28);
+    padding: 40px 20px;
+}
+
+/* Parte do formulário */
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: rgba(254, 207, 51, 1);
+    padding: 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+legend {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.input-group input {
+    flex: 1;
+    min-width: 200px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(254, 207, 51, 1);
+    color: rgb(32, 31, 28);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(247, 189, 0);
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
